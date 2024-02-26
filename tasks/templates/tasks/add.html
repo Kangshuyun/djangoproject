@@ -8,9 +8,9 @@
     <!--added csrf token because after adding it wasn't taking the value and adding to another page-->
     {% csrf_token %}
     {{form}}
-    <input type="submit" value="add task to list">
-    <br>
-<a href ="{% url 'tasks:index'%}">view  all tasks</a>
+    <input type="submit" value="add task to list"><a href ="{% url 'tasks:index'%}">
+        <br>view  all tasks</a>
     
+    <br>
 </form>
 {% endblock %}
